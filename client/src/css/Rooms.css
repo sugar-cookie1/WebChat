@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.3), 0 0 35px rgba(0, 191, 255, 0.2);
+  width: 100%;
+  margin: 50px auto;
+  transition: 0.3s ease;
+}
+
+.join_room {
+  display: flex;
+  gap: 10px;
+}
+
+.join_room input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+.join_room input:focus {
+  border: 2px solid #ff69b4;
+}
+
+.join_room button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background-image: linear-gradient(to right, #ff69b4, #00bfff);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.join_room button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.room-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #2a2a2a;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.room-item:hover {
+  background-color: #333;
+  transform: scale(1.02);
+}
+
+.room-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.room-info h4 {
+  margin: 0;
+  color: #ff69b4;
+}
+
+.room-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
