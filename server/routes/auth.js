@@ -4,8 +4,8 @@ const AuthFunctions = require('../services/authFunctions')
 const authfunctions = new AuthFunctions;
 require("dotenv").config();
 
-router.post('/register',(req, res) => authfunctions.register(req, res));
+router.post('/register',authfunctions.register);
 
-router.post('/login', (req, res) => authfunctions.login(req, res));
+router.post('/login', authfunctions.login);
 
 module.exports = router;
