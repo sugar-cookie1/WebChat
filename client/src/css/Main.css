@@ -1,42 +1,21 @@
 .page {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #0d0d0d;
-  color: #f0f0f0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
-}
-
-.navigation-bar {
-  flex: 0 0 auto;
-  padding: 20px;
-  background-color: #1a1a1a;
-  z-index: 10;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3), 0 0 25px rgba(0, 191, 255, 0.2);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .main-content {
-  flex: 1;
-  display: flex;
-  overflow: hidden;
+    display: flex;
+    height: 100%;
+    column-gap: 24px;
 }
 
-.rooms-panel {
-  flex: 0 0 25%;
-  background-color: #1a1a1a;
-  overflow-y: auto;
-  padding: 20px;
-  box-shadow: inset -2px 0 10px rgba(255, 105, 180, 0.1);
-  z-index: 1;
-}
+/* .rooms-panel {
+    border: 2px solid purple;
+} */
 
 .chat-panel {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 0;
+    flex-grow: 1;
 }

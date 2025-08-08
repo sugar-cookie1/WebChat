@@ -30,12 +30,10 @@ function Chat({username , room}){
 
     return (
         <div className="app">
-            <div className="chat-wrapper">
                 <div className = "chat-header">
                     <p>Live Chat</p>
                 </div>
                 <div className = "chat-body">
-                    <div className="chat-container">
                         <div className = "chat-box">
                             {messages.map((msg, index) => 
                             <div key={index} className="message">
@@ -59,9 +57,7 @@ function Chat({username , room}){
                                 />
                             <button onClick={sendMessage}>&#9658;</button>
                         </div>
-                    </div>
                 </div>
-            </div>
         </div>
 
     )
